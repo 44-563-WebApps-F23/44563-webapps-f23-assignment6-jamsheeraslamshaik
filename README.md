@@ -2,3 +2,4 @@
 # WebApps-F23-Assignment-6
 Introduction to Java Script and DOM
 
+Hosted at (https://github.com/44-563-WebApps-F23/44563-webapps-f23-assignment6-jamsheeraslamshaik/settings/pages)(file:///C:/Users/S567366/OneDrive%20-%20nwmissouri.edu/Documents/GitHub/webapps-repos/44563-webapps-f23-assignment6-jamsheeraslamshaik/author.html)(file:///C:/Users/S567366/OneDrive%20-%20nwmissouri.edu/Documents/GitHub/webapps-repos/44563-webapps-f23-assignment6-jamsheeraslamshaik/tips.html)(file:///C:/Users/S567366/OneDrive%20-%20nwmissouri.edu/Documents/GitHub/webapps-repos/44563-webapps-f23-assignment6-jamsheeraslamshaik/cruise.html)
