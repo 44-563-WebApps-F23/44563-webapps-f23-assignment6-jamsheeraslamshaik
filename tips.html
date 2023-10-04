@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>tips</title>
+    </head>
+ 
+<body>
+
+<h1>Jamsheer Aslam Shaik shows tip amounts</h1>
+<form>
+    <label for="base">Enter base amount </label>
+    <input type ="number" id="base"  value="50"> <br>
+
+    <label for="tip">Enter the tip percent </label>
+    <input type ="number" id="tip"  value=15> <br>
+
+    <button  type="button" onclick="tips()" value="Show tip">show tip</button>
+</form>
+<div id="result"></div>
+<script> 
+let myOutput="";
+function tips() {
+    
+    var base = document.getElementById("base").value;
+    var tip = parseInt(document.getElementById("tip").value);
+    var toshow="Tips are: ";
+    
+   for(var i=0; i < 5; i++)
+   {
+    var calculatedtip= (base*(tip+i*4))/100;
+    toshow += (tip+i*4)+"% is "+calculatedtip.toFixed(1)+"; ";  
+   }
+   document.getElementById("result").innerHTML = toshow;
+   
+} 
+</script>
+
+<form>
+    <input type="radio" id="sum"  value="sum"   onclick="chooseOp()"  >
+        <label for="sum">sum</label></br>
+
+        <input type="radio" id="diff"  value="difference" onclick="chooseOp()"  >
+        <label for="diff">difference</label></br>
+
+        <input type="radio" id="mult"  value="product" onclick="chooseOp()"  >
+        <label for="mult">Product</label></br>
+
+        
+</form>
+
+<p id="resultid"></p>
+
+<script>
+    function chooseOp() {
+      var base = parseFloat(document.getElementById("base").value);
+      var tip = parseFloat(document.getElementById("tip").value);
+
+      if(document.getElementById('sum').checked)
+      {
+        var sum= base+tip;
+        document.getElementById("resultid").innerHTML="Sum of "+base+" and "+tip+" is "+sum;
+      }
+      else if(document.getElementById('diff').checked)
+      {
+        var diff= base-tip;
+        document.getElementById("resultid").innerHTML="difference of "+base+" and "+tip+" is "+diff;
+      }
+      else{
+        var mul=base*tip;
+        document.getElementById("resultid").innerHTML="Product of "+base+" and "+tip+" is "+mul;
+      }
+
+
+    }
+</script>
+
+</body>
+</html> 
